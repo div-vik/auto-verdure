@@ -26,6 +26,7 @@ module.exports = {
         secondaryBg: "#F8F8F8",
         tertiaryBg: "#D6D6D6",
         quaternaryBg: "#63AC51",
+        primaryCream: "#FBEBDB",
       },
     },
   },
