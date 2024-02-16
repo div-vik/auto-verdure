@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="mb-[73px] border-t-[1px] border-tertiaryBg" />
       <div className="xl:gap-x-[78px] grid grid-cols-1 md:grid-cols-2 xl:flex xl:justify-around">
         {/* Comapny Logo, About and Social Media */}
-        <div className="w-[292px] flex flex-col justify-start items-start gap-[33px]">
+        <div className="w-full md:w-[292px] flex flex-col justify-start items-start gap-[33px]">
           <p className="text-black text-[28px] fontText font-medium leading-8">
             Auto Verdure
           </p>
@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="w-[290px] xl:w-[287px] h-fit mt-[52px] md:mt-[43px] xl:mt-0 flex flex-col justify-center md:justify-normal items-center">
+        <div className="w-full md:w-[290px] xl:w-[287px] h-fit mt-[52px] md:mt-[43px] xl:mt-0 flex flex-col justify-center md:justify-normal items-center">
           <p className="text-base font-medium text-secondaryMain">Newsletter</p>
 
           <div className="w-full mt-[18px] pl-[18px] pr-2 py-[7px] flex border-black border-opacity-[14%] rounded-[100px] border-[1px]">
