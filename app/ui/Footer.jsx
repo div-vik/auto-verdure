@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="pl-4 pr-[85px] md:px-[41px] lg:px-[80px] xl:px-[119px] mb-[45px]">
       {/* Border */}
-      <div className="mb-[73px] border-t-[1px] border-tertiaryBg" />
+      <div className="hidden md:flex mb-[73px] border-t-[1px] border-tertiaryBg" />
       <div className="xl:gap-x-[78px] grid grid-cols-1 md:grid-cols-2 xl:flex xl:justify-around">
         {/* Comapny Logo, About and Social Media */}
         <div className="w-full md:w-[292px] flex flex-col justify-start items-start gap-[33px]">
