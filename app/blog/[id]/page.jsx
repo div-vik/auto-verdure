@@ -198,8 +198,8 @@ const SingleBlog = () => {
         </div>
       </div>
 
-      <div className="md:w-[681px] xl:w-[1200px] flex flex-col justify-center items-center">
-        {/* Related Blog */}
+      {/* Related Blog */}
+      <div className="md:w-[681px] xl:w-[1200px] 2xl:w-[1500px] flex flex-col justify-center items-center">
         <div className="mt-20 w-full flex flex-col justify-center items-center">
           <div className="sm:w-[352px] md:w-full xl:w-[872px] flex flex-col gap-5 justify-center items-center md:justify-start md:items-start xl:justify-center xl:items-center xl:text-center">
             <p className="text-[40px] leading-[48px] -tracking-[1px] text-primaryGrayscale font-normal text-center">
@@ -339,7 +339,7 @@ const SingleBlog = () => {
         </div>
 
         {/* Contact Us */}
-        <div className="mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream xl:flex flex-col justify-center items-center">
+        <div className="w-full mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream xl:flex flex-col justify-center items-center">
           <p className="mb-4 text-[32px] leading-[48px] -tracking-[0.8px] font-normal xl:text-center">
             Book a call with an expert to guide you through auto farming For a
             desired healthier lifestyle
