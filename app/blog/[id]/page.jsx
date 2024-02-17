@@ -12,7 +12,7 @@ const SingleBlog = () => {
         </p>
       </div>
 
-      <div className="mt-[88px] md:mt-[70px] w-full sm:w-[364px] md:w-[681px] xl:w-[833px] flex flex-col justify-center items-center">
+      <div className="mt-[88px] md:mt-[70px] w-full sm:w-[364px] md:w-[681px] xl:w-[833px] 2xl:w-[1000px] flex flex-col justify-center items-center">
         <div className="w-full relative">
           {/* Leaf */}
           <div className="xl:hidden absolute -top-[26px] left-[38px] md:-top-8 md:left-[550px]">
@@ -63,9 +63,9 @@ const SingleBlog = () => {
         {/* Blog Image and Description */}
         <div className="mt-[68px] w-full flex flex-col justify-center items-center">
           {/* Blog Image */}
-          <div className="w-full h-[218px] md:h-[419px] md:w-[681px] xl:w-[833px] rounded-3xl flex justify-center items-center">
+          <div className="w-full h-[218px] md:h-[419px] md:w-[681px] xl:w-[833px] 2xl:w-[1000px] rounded-3xl flex justify-center items-center">
             <Image
-              className="object-cover w-full h-[218px] md:h-[419px] md:w-[681px] xl:w-[833px] rounded-3xl"
+              className="object-cover w-full h-[218px] md:h-[419px] md:w-[681px] xl:w-[833px] 2xl:w-[1000px] rounded-3xl"
               src="/blogImage.png"
               alt="image"
               width={1000}
@@ -334,12 +334,12 @@ const SingleBlog = () => {
         </div>
 
         {/* Explore More */}
-        <div className="mt-[33px] w-fit px-[42px] py-[18px] text-base font-normal border-[1px] border-primaryGrayscale rounded-[100px]">
+        <div className="mt-[33px] w-fit px-[42px] py-[18px] text-base font-normal border-[1px] border-primaryGrayscale rounded-[100px] cursor-pointer">
           <Link href="#">Explore More</Link>
         </div>
 
         {/* Contact Us */}
-        <div className="mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream xl:flex flex-col justify-center items-center">
+        <div className="mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream xl:flex flex-col justify-center items-center cursor-pointer">
           <p className="mb-4 text-[32px] leading-[48px] -tracking-[0.8px] font-normal xl:text-center">
             Book a call with an expert to guide you through auto farming For a
             desired healthier lifestyle
