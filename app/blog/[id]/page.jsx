@@ -339,7 +339,7 @@ const SingleBlog = () => {
         </div>
 
         {/* Contact Us */}
-        <div className="mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream xl:flex flex-col justify-center items-center cursor-pointer">
+        <div className="mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream xl:flex flex-col justify-center items-center">
           <p className="mb-4 text-[32px] leading-[48px] -tracking-[0.8px] font-normal xl:text-center">
             Book a call with an expert to guide you through auto farming For a
             desired healthier lifestyle
@@ -350,7 +350,7 @@ const SingleBlog = () => {
             plant consultation services to help you make informed decisions
             about your indoor and outdoor greenery.
           </p>
-          <div className="mt-6 w-fit px-[42px] py-[18px] rounded-[100px] text-base bg-primaryMain font-normal">
+          <div className="mt-6 w-fit px-[42px] py-[18px] rounded-[100px] text-base bg-primaryMain font-normal cursor-pointer">
             <p>Contact us</p>
           </div>
         </div>
