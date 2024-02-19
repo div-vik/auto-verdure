@@ -1,9 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { navItems } from "../constant/data";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  let pathname = usePathname().split("/").pop();
+
+  if (pathname === "about-us") {
+    pathname = "about us";
+  } else if (pathname === "") {
+    pathname = "home";
+  }
+
   return (
     <div className="px-4 py-[19px] md:pl-[51px] md:pr-[27.53px] xl:pl-[117px] xl:pr-[77.34px] bg-[#FFFCF8] flex justify-between items-center">
       {/* Logo and Company Name */}
@@ -35,12 +46,18 @@ const Navbar = () => {
             >
               <li
                 className={
-                  item.title === "Contact" ? "font-bold" : "font-normal"
+                  item.title === pathname
+                    ? "font-bold capitalize"
+                    : "font-normal hover:font-bold capitalize"
                 }
               >
                 {item.title}
               </li>
-              <div className={item.title === "Contact" ? "flex" : "hidden"}>
+              <div
+                className={
+                  item.title === "contact" ? "flex hover:font-bold" : "hidden"
+                }
+              >
                 <Image
                   src="/downArrow.svg"
                   alt="downArrow"
@@ -57,10 +74,11 @@ const Navbar = () => {
       <div className="hidden xl:flex gap-[15px]">
         <div className="w-[240px] h-[50px] pr-[17px] flex justify-between items-center border-2 border-primaryBg rounded-[999px] bg-secondaryBg">
           <input
-            className="pl-5 py-[16.6px] mr-[17px] rounded-[999px] border-r-2 w-full h-full focus:outline-none rounded-r-none bg-secondaryBg"
+            className="pl-5 py-[16.6px] mr-[17px] rounded-[999px] border-r-2 w-full h-full focus:outline-black rounded-r-none bg-secondaryBg"
             type="text"
             placeholder="Search"
             autoComplete="false"
+            spellCheck="false"
           />
           <div className="cursor-pointer">
             <Image
