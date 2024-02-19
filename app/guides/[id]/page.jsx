@@ -1,14 +1,18 @@
+import { guides } from "@/app/constant/data";
+import GuideCard from "@/app/ui/GuideCard.jsx/GuideCard";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const SingleBlog = () => {
   return (
-    <div className="mt-8 mb-[126px] md:mt-10 md:mb-[128.44px] pl-4 pr-[13px] flex flex-col justify-center items-center">
+    <div className="pt-8 pb-[126px] md:pt-10 md:pb-[128.44px] xl:pt-[57px] xl:pb-[167px] pl-4 pr-[13px] bg-[#FFFCF8] flex flex-col justify-center items-center">
       <div className="px-1 md:px-[35px] xl:px-[101px] text-base font-medium w-full flex flex-col justify-start items-start">
         <p>
-          <span className="text-primaryMain">Home / Our Blog /</span> Lorem
-          Ipsum
+          <span className="text-primaryMain">
+            <Link href="/">Home</Link> / <Link href="/guides">Our Blog</Link> /{" "}
+          </span>{" "}
+          Lorem Ipsum
         </p>
       </div>
 
@@ -199,7 +203,7 @@ const SingleBlog = () => {
       </div>
 
       {/* Related Blog */}
-      <div className="md:w-[681px] xl:w-[1200px] 2xl:w-[1500px] flex flex-col justify-center items-center">
+      <div className="w-full sm:w-[364px] md:w-[681px] xl:w-[1200px] 2xl:w-[1500px] flex flex-col justify-center items-center">
         <div className="mt-20 w-full flex flex-col justify-center items-center">
           <div className="sm:w-[352px] md:w-full xl:w-[872px] flex flex-col gap-5 justify-center items-center md:justify-start md:items-start xl:justify-center xl:items-center xl:text-center">
             <p className="text-[40px] leading-[48px] -tracking-[1px] text-primaryGrayscale font-normal text-center">
@@ -213,123 +217,10 @@ const SingleBlog = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[41px] md:gap-x-[55px] xl:gap-x-[41px]">
-            <div>
-              <div className="w-full h-[226px] md:w-[309px] md:h-[194.158px] xl:w-[373px] xl:h-[234px] rounded-3xl">
-                <Image
-                  className="object-cover w-full h-[226px] md:w-[309px] md:h-[194.158px] xl:w-[373px] xl:h-[234px] rounded-3xl"
-                  src="/blogImage2.png"
-                  alt="blogImage2"
-                  width={1000}
-                  height={226}
-                />
-              </div>
-
-              <div className="mt-6">
-                <div className="w-fit rounded-lg px-3 py-[6px] text-sm font-normal -tracking-[0.35px] bg-quaternaryMain text-quaternaryBg">
-                  <p>Plant Care</p>
-                </div>
-                <div className="mt-2 text-xl leading-6 -tracking-[0.5px] font-[600] text-primaryGrayscale">
-                  <p>The Importance of Soil Quality for Healthy Plant Growth</p>
-                </div>
-                <div className="mt-3 text-base font-medium flex gap-2">
-                  <p>Read More</p>
-                  <Image
-                    src="/rightArrow.svg"
-                    alt="rightArrow"
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="mt-3 flex gap-[12px]">
-                  <div>
-                    <Image src="/user.svg" alt="user" width={32} height={32} />
-                  </div>
-                  <div className="flex flex-col gap-[2px] text-start text-primaryGrayscale">
-                    <p className="text-xs font-medium">By Arka</p>
-                    <p className="text-xs font-normal">Feb 25, 2024</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className="w-full h-[226px] md:w-[309px] md:h-[194.158px] xl:w-[373px] xl:h-[234px] rounded-3xl">
-                <Image
-                  className="object-cover w-full h-[226px] md:w-[309px] md:h-[194.158px] xl:w-[373px] xl:h-[234px] rounded-3xl"
-                  src="/blogImage3.png"
-                  alt="blogImage3"
-                  width={1000}
-                  height={226}
-                />
-              </div>
-
-              <div className="mt-6">
-                <div className="w-fit rounded-lg px-3 py-[6px] text-sm font-normal -tracking-[0.35px] bg-quaternaryMain text-quaternaryBg">
-                  <p>Plant Care</p>
-                </div>
-                <div className="mt-2 text-xl leading-6 -tracking-[0.5px] font-[600] text-primaryGrayscale">
-                  <p>The Importance of Soil Quality for Healthy Plant Growth</p>
-                </div>
-                <div className="mt-3 text-base font-medium flex gap-2">
-                  <p>Read More</p>
-                  <Image
-                    src="/rightArrow.svg"
-                    alt="rightArrow"
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="mt-3 flex gap-[12px]">
-                  <div>
-                    <Image src="/user.svg" alt="user" width={32} height={32} />
-                  </div>
-                  <div className="flex flex-col gap-[2px] text-start text-primaryGrayscale">
-                    <p className="text-xs font-medium">By Arka</p>
-                    <p className="text-xs font-normal">Feb 25, 2024</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className="w-full h-[226px] md:w-[309px] md:h-[194.158px] xl:w-[373px] xl:h-[234px] rounded-3xl">
-                <Image
-                  className="object-cover w-full h-[226px] md:w-[309px] md:h-[194.158px] xl:w-[373px] xl:h-[234px] rounded-3xl"
-                  src="/blogImage4.png"
-                  alt="blogImage4"
-                  width={1000}
-                  height={226}
-                />
-              </div>
-
-              <div className="mt-6">
-                <div className="w-fit rounded-lg px-3 py-[6px] text-sm font-normal -tracking-[0.35px] bg-quaternaryMain text-quaternaryBg">
-                  <p>Plant Care</p>
-                </div>
-                <div className="mt-2 text-xl leading-6 -tracking-[0.5px] font-[600] text-primaryGrayscale">
-                  <p>The Importance of Soil Quality for Healthy Plant Growth</p>
-                </div>
-                <div className="mt-3 text-base font-medium flex gap-2">
-                  <p>Read More</p>
-                  <Image
-                    src="/rightArrow.svg"
-                    alt="rightArrow"
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="mt-3 flex gap-[12px]">
-                  <div>
-                    <Image src="/user.svg" alt="user" width={32} height={32} />
-                  </div>
-                  <div className="flex flex-col gap-[2px] text-start text-primaryGrayscale">
-                    <p className="text-xs font-medium">By Arka</p>
-                    <p className="text-xs font-normal">Feb 25, 2024</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[41px] md:gap-y-[57px] xl:gap-y-[73px] md:gap-x-[55px] xl:gap-x-[41px]">
+            {guides.map((guide, index) => (
+              <GuideCard guide={guide} key={index} />
+            ))}
           </div>
         </div>
 
