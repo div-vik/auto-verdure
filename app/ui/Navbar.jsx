@@ -5,7 +5,7 @@ import { navItems } from "../constant/data";
 
 const Navbar = () => {
   return (
-    <div className="px-4 py-[19px] md:pl-[51px] md:pr-[27.53px] xl:pl-[117px] xl:pr-[77.34px] flex justify-between items-center">
+    <div className="px-4 py-[19px] md:pl-[51px] md:pr-[27.53px] xl:pl-[117px] xl:pr-[77.34px] bg-[#FFFCF8] flex justify-between items-center">
       {/* Logo and Company Name */}
       <Link
         href="/"
