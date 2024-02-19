@@ -18,7 +18,7 @@ const GuideCard = ({ guide }) => {
         />
       </div>
 
-      <div className="mt-6">
+      <div className="mt-6 w-full">
         <div className="w-fit rounded-lg px-3 py-[6px] text-sm font-normal -tracking-[0.35px] bg-quaternaryMain text-quaternaryBg">
           <p>Plant Care</p>
         </div>
