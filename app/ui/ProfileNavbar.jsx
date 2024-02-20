@@ -13,7 +13,7 @@ const ProfileNavbar = () => {
         <p>Profile</p>
       </div>
 
-      <div className="mt-5 mb-[112px] md:mt-6 md:mb-[40px] text-base text-secondaryGrayscale font-medium capitalize">
+      <div className="my-5 md:mt-6 md:mb-[40px] text-base text-secondaryGrayscale font-medium capitalize">
         <p>
           <Link href="/">
             <span className="text-primaryMain">Home</span>
