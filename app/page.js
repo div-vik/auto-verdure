@@ -347,8 +347,8 @@ export default function Home() {
             Join THE AV Family World&apos;s first customizable hydroponic pots.
           </p>
           <p className="w-[272px] text-sm leading-6 font-normal text-secondaryGrayscale">
-            "Unlock The Biophile Inside You: Embrace Your Connection With Nature
-            !"
+            &quot;Unlock The Biophile Inside You: Embrace Your Connection With
+            Nature !&quot;
           </p>
         </div>
 
