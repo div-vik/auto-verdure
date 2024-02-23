@@ -8,7 +8,7 @@ const Guides = () => {
       {/* All Guides */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[41px] md:gap-y-[57px] xl:gap-y-[73px] md:gap-x-[55px] xl:gap-x-[41px]">
         {guides.map((guide, index) => (
-          <GuideCard guide={guide} key={index} />
+          <GuideCard href="/guides" guide={guide} key={index} />
         ))}
       </div>
     </div>

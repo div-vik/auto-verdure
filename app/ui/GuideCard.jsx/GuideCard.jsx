@@ -2,12 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const GuideCard = ({ guide }) => {
+const GuideCard = ({ guide, href }) => {
   return (
-    <Link
-      href="/guides/123"
-      className="w-full sm:w-[364px] md:w-[309px] xl:w-[373px]"
-    >
+    <Link href="/guides/123" className="w-full">
       <div className="w-full h-[226px] md:h-[194.158px] xl:h-[234px] rounded-3xl">
         <Image
           className="object-cover w-full h-[226px] md:h-[194.158px] xl:h-[234px] rounded-3xl"
