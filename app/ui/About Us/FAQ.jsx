@@ -1,10 +1,31 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Accordian from "./Accordian";
+import {
+  generalQuestions,
+  paymentQuestions,
+  productQuestions,
+} from "@/app/constant/data";
 
 const FAQ = () => {
   const [faq, setFaq] = useState("general questions");
+
+  const accordian = (faq) => {
+    if (faq === "general questions") {
+      return generalQuestions.map((item, index) => (
+        <Accordian key={index} question={item.question} answer={item.answer} />
+      ));
+    } else if (faq === "product questions") {
+      return productQuestions.map((item, index) => (
+        <Accordian key={index} question={item.question} answer={item.answer} />
+      ));
+    } else if (faq === "payment questions") {
+      return paymentQuestions.map((item, index) => (
+        <Accordian key={index} question={item.question} answer={item.answer} />
+      ));
+    }
+  };
 
   return (
     <div className="mt-[142px] md:mt-[198px] w-full flex flex-col justify-center items-center">
@@ -57,7 +78,7 @@ const FAQ = () => {
       </div>
 
       {/* FAQs */}
-      <Accordian />
+      {accordian(faq)}
     </div>
   );
 };
