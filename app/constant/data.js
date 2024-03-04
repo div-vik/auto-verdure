@@ -201,3 +201,150 @@ export const hydroponics = [
     img: "/fresh.png",
   },
 ];
+
+export const generalQuestions = [
+  {
+    question: "What makes Autoverdure hydroponic pots unique?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "How do Autoverdure hydroponic pots contribute to sustainability?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Can you tell me about the futuristic features of Autoverdure hydroponic pots?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Are Autoverdure hydroponic pots suitable for all plant varieties?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "How does Autoverdure prioritize industry-leading design in their hydroponic pots?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Are Autoverdure hydroponic pots suitable for both indoor and outdoor use?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Do Autoverdure hydroponic pots require any specialized knowledge or maintenance?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question: "How does Autoverdure prioritize customer satisfaction?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+];
+
+export const productQuestions = [
+  {
+    question: "What makes Autoverdure hydroponic pots unique?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "How do Autoverdure hydroponic pots contribute to sustainability?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Can you tell me about the futuristic features of Autoverdure hydroponic pots?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Are Autoverdure hydroponic pots suitable for all plant varieties?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "How does Autoverdure prioritize industry-leading design in their hydroponic pots?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Are Autoverdure hydroponic pots suitable for both indoor and outdoor use?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Do Autoverdure hydroponic pots require any specialized knowledge or maintenance?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question: "How does Autoverdure prioritize customer satisfaction?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+];
+
+export const paymentQuestions = [
+  {
+    question: "What makes Autoverdure hydroponic pots unique?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "How do Autoverdure hydroponic pots contribute to sustainability?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Can you tell me about the futuristic features of Autoverdure hydroponic pots?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Are Autoverdure hydroponic pots suitable for all plant varieties?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "How does Autoverdure prioritize industry-leading design in their hydroponic pots?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Are Autoverdure hydroponic pots suitable for both indoor and outdoor use?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question:
+      "Do Autoverdure hydroponic pots require any specialized knowledge or maintenance?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+  {
+    question: "How does Autoverdure prioritize customer satisfaction?",
+    answer:
+      "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+];
