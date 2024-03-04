@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUsCard = ({ aboutDetails }) => {
   return (
-    <div className="w-full px-[34.19px] py-[34.19px] gap-[10.68px] md:gap-[15px] flex flex-col bg-[#F9ECDD]">
+    <div className="w-full md:w-[416px] px-[34.19px] py-[34.19px] gap-[10.68px] md:gap-[15px] flex flex-col bg-[#F9ECDD]">
       <div className="flex gap-[11.4px] items-center">
         <Image
           className="object-contain md:w-[48px] md:h-[49px]"

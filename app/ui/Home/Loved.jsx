@@ -29,7 +29,7 @@ const Loved = () => {
           <p className="text-[13.528px] leading-[15.915px] font-normal text-[#0E0E0E]">
             $349.99 USD
           </p>
-          <button className="text-[15.915px] px-5 py-2 border-[#000] border-[0.8px] rounded-[46.2px]">
+          <button className="text-[15.915px] px-5 py-1 border-[#000] border-[0.8px] rounded-[46.2px]">
             Add
           </button>
         </div>

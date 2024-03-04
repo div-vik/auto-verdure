@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
 import { hydroponics } from "./constant/data";
 import HydroponicCard from "./ui/Home/HydroponicCard";
 import CollectionCard from "./ui/Home/CollectionCard";
-import { BiCheck } from "react-icons/bi";
+import { BiCheck, BiX } from "react-icons/bi";
 import Loved from "./ui/Home/Loved";
 import Testimonial from "./ui/Home/Testimonial";
+import RelatedBlog from "./ui/RelatedBlog";
+import Contact from "./ui/Home/Contact";
 
 export default function Home() {
   return (
@@ -198,8 +199,55 @@ export default function Home() {
       </div>
 
       {/* Join the Auto Verdure Movement */}
-      <div className="mt-[107.5px] max-w-[361px] w-full">
-        <div className="w-full flex flex-col gap-5">
+      <div className="mt-[107.5px] md:mt-[72px] max-w-[361px] md:max-w-[754px] xl:max-w-[1226px] w-full h-full">
+        <div className="hidden w-full h-[432px] xl:h-[521px] md:flex gap-x-5 xl:gap-[54px] justify-center items-center xl:items-start">
+          <div className="w-[366px] h-full xl:w-[604px] xl:h-[521px] xl:flex-1 rounded-[9.7px]">
+            <Image
+              className="w-[366px] h-full xl:w-[604px] xl:h-[521px]"
+              src="/homeImage.png"
+              alt="img"
+              width={366}
+              height={432}
+            />
+          </div>
+
+          <div className="w-[366px] h-[432px] xl:h-full flex xl:flex-1 flex-col gap-y-5 xl:gap-y-8">
+            <div className="w-full flex flex-col gap-5">
+              <p className="text-4xl xl:text-[50px] leading-[43.2px] xl:leading-[60px] -tracking-[0.9px] xl:-tracking-[1.25px] font-normal text-primaryGrayscale">
+                Join the Auto Verdure Movement to Transform Indoor & Outdoor
+                Urban Plant Growing.
+              </p>
+              <p className="text-sm leading-6 font-normal text-secondaryGrayscale">
+                No Contaminants. Only Nutrient-Packed Produce.
+              </p>
+            </div>
+
+            <div className="w-full h-[432px] xl:h-full flex gap-[21.5px] justify-between xl:justify-normal xl:gap-6">
+              <Image
+                className="xl:w-[192px] xl:h-[205px]"
+                src="/aboutImg3.png"
+                alt="img"
+                width={172.075}
+                height={183.725}
+              />
+              <Image
+                className="xl:w-[192px] xl:h-[205px]"
+                src="/aboutImg3.png"
+                alt="img"
+                width={171.075}
+                height={183.725}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-[58px] hidden w-full md:flex flex-col justify-center items-center">
+          <button className="text-base px-[42px] py-[18px] rounded-[100px] border-[1px] font-normal text-primaryGrayscale">
+            About Us
+          </button>
+        </div>
+
+        <div className="md:hidden w-full flex flex-col gap-5">
           <p className="text-[40px] leading-[48px] -tracking-[1px] font-normal text-primaryGrayscale">
             Join the Auto Verdure Movement to Transform Indoor & Outdoor Urban
             Plant Growing.
@@ -210,7 +258,7 @@ export default function Home() {
         </div>
 
         {/* Video and Image */}
-        <div className="mt-8 w-full flex flex-col gap-8">
+        <div className="md:hidden mt-8 w-full flex flex-col gap-8">
           <div className="max-w-[361px] h-[180.5px] rounded-[14.1px] bg-primaryMain"></div>
 
           <div className="w-full flex justify-between">
@@ -235,59 +283,102 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-[59.11px] w-full flex flex-col justify-center items-center">
-          <div className="w-full flex flex-col justify-center items-center">
-            <Image
-              className="object-contain"
-              src="/powerfullResearch.png"
-              alt="image"
-              width={361}
-              height={300}
-            />
-            <div className="mt-[30px] w-full">
-              <p className="text-2xl leading-[48px] -tracking-[0.6px] text-primaryMain font-bold">
-                Powerful design research
-              </p>
-              <p className="mt-[10px] text-xl leading-8 -tracking-[0.5px] font-normal text-[#888888]">
-                We are the first in the Indian Market to combat the rising
-                concern of mosquito-induced diseases by integrating the solution
-                into our design research.
-              </p>
+        <div className="mt-[59.11px] w-full flex flex-col md:gap-y-7 justify-center items-center">
+          <div className="w-full flex flex-col md:flex-row-reverse md:gap-[56.67px] justify-center">
+            <div className="w-full md:w-[405px] xl:w-[646.67px] flex flex-col justify-center items-center md:justify-start md:items-start">
+              <Image
+                className="md:w-[405px] md:h-[300px] xl:w-[646.67px]"
+                src="/powerfullResearch.png"
+                alt="image"
+                width={361}
+                height={300}
+              />
+              <div className="mt-[30px] w-full">
+                <p className="text-2xl leading-[48px] -tracking-[0.6px] text-primaryMain font-bold">
+                  Powerful design research
+                </p>
+                <p className="mt-[10px] text-xl leading-8 -tracking-[0.5px] font-normal text-[#888888]">
+                  We are the first in the Indian Market to combat the rising
+                  concern of mosquito-induced diseases by integrating the
+                  solution into our design research.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-[59px] md:mt-0 w-full md:w-[293.33px] flex flex-col justify-start items-start">
+              <Image
+                className="object-contain md:w-[293.33px] md:h-[300px]"
+                src="/waterRetention.png"
+                alt="image"
+                width={361}
+                height={300}
+              />
+              <div className="mt-[30px] w-[237px]">
+                <p className="text-2xl leading-[48px] -tracking-[0.6px] text-primaryMain font-bold">
+                  Water Retention
+                </p>
+                <p className="mt-[10px] text-xl leading-8 -tracking-[0.5px] font-normal text-[#888888]">
+                  We have successfully developed an unmatchable Water Retention
+                  Technology amongst all the Hydroponic system competitors
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="mt-[59px] w-full flex flex-col justify-center items-center">
-            <Image
-              className="object-contain"
-              src="/waterRetention.png"
-              alt="image"
-              width={361}
-              height={300}
-            />
-            <div className="mt-[30px] w-full">
-              <p className="text-2xl leading-[48px] -tracking-[0.6px] text-primaryMain font-bold">
-                Water Retention
-              </p>
-              <p className="mt-[10px] text-xl leading-8 -tracking-[0.5px] font-normal text-[#888888]">
-                We have successfully developed an unmatchable Water Retention
-                Technology amongst all the Hydroponic system competitors
-              </p>
+          <div className="hidden w-full md:flex md:gap-[56.67px] justify-center">
+            <div className="w-full md:w-[405px] xl:w-[646.67px] hidden md:flex flex-col justify-center items-center md:justify-start md:items-start">
+              <Image
+                className="md:w-[405px] md:h-[300px] xl:w-[646.67px]"
+                src="/recyclable.png"
+                alt="image"
+                width={361}
+                height={300}
+              />
+              <div className="mt-[30px] w-full">
+                <p className="text-2xl leading-[48px] -tracking-[0.6px] text-primaryMain font-bold">
+                  Recyclable
+                </p>
+                <p className="mt-[10px] text-xl leading-8 -tracking-[0.5px] font-normal text-[#888888]">
+                  100% Recyclable material for Transforming Urban Farming into a
+                  Greener Future.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-[59px] md:mt-0 w-full md:w-[293.33px]  hidden md:flex flex-col justify-center items-center md:justify-start md:items-start">
+              <Image
+                className="object-contain md:w-[293.33px] md:h-[300px]"
+                src="/expert.png"
+                alt="image"
+                width={361}
+                height={300}
+              />
+              <div className="mt-[30px] w-[237px]">
+                <p className="text-2xl leading-[48px] -tracking-[0.6px] text-primaryMain font-bold">
+                  Expert Guidance
+                </p>
+                <p className="mt-[10px] text-xl leading-8 -tracking-[0.5px] font-normal text-[#888888]">
+                  And YES, Just Like you, we are Passionate about Plants- We
+                  Bring you Expert Guidance to provide proper care to your
+                  Plants.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Why should you switch from traditional pots to hydroponics? */}
-      <div className="mt-[88px] max-w-[361px] w-full flex flex-col justify-center items-center">
-        <div>
-          <p className="text-[40px] leading-[48px] -tracking-[1px] font-normal text-primaryGrayscale">
+      <div className="mt-[88px] md:mt-[122px] xl:mt-[74px] max-w-[361px] md:max-w-[754px] xl:max-w-[1200px] w-full flex flex-col justify-center items-center">
+        <div className="md:w-[467px] xl:w-[649px]">
+          <p className="text-[40px] md:text-4xl xl:text-[50px] leading-[48px] xl:leading-[60px] -tracking-[1px] xl:-tracking-[1.25px] md:text-center font-normal text-primaryGrayscale">
             Why should you switch from traditional pots to hydroponics?
           </p>
         </div>
 
-        <div className="mt-[47.41px] w-full">
-          <div className="w-full flex rounded-[16.4px] shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] bg-[#fff]">
-            <div className="w-full flex flex-col gap-5 text-[11.488px] p-[24.62px] font-[600] leading-[17.232px]">
+        <div className="mt-[47.41px] md:mt-[73px] xl:mt-[82px] w-full md:flex flex-col justify-center items-center">
+          <div className="w-full md:w-[523px] xl:w-fit flex md:gap-x-5 rounded-[16.4px]">
+            <div className="w-full xl:w-[320px] flex flex-col md:flex-1 gap-5 text-[11.488px] md:text-xs p-[24.62px] font-[600] leading-[17.232px] md:leading-[17.832px] rounded-tl-[16.4px] rounded-bl-[16.4px] md:rounded-[16.4px] shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] bg-[#fff]">
               <p className="">How we are different.</p>
               <div className="mt-[32.82px] w-full flex flex-col gap-[8.21px] text-[#666666]">
                 <p>Plant Watering</p>
@@ -301,11 +392,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full px-[10.26px] py-[25.47px] scale-105 border-[2.55px] rounded-[17px] border-primaryMain flex flex-col bg-white items-center">
-              <p className="text-[11.888px] font-[600] leading-[17.832px] text-[#666]">
+            <div className="w-full xl:w-[320px] text-[11.888px] md:text-xs xl:text-sm px-[10.26px] py-[25.47px] scale-105 border-[2.55px] rounded-[17px] border-primaryMain flex flex-col md:flex-1 bg-white shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] items-center">
+              <p className="font-[600] leading-[17.832px] text-[#666]">
                 Our Hydroponic Pot
               </p>
-              <div className="mt-[52px] text-[11.888px] leading-[17.832px] gap-[8.49px] flex flex-col justify-center items-center">
+              <div className="mt-[52px] md:text-xs leading-[17.832px] gap-[9px] md:gap-[11px] flex flex-col justify-center items-center">
                 <p>Once 30-45 Days</p>
                 <p>Analytics</p>
                 <p>Faster</p>
@@ -316,57 +407,265 @@ export default function Home() {
                 <BiCheck className="text-[#00FF66]" />
               </div>
             </div>
+
+            <div className="hidden w-full xl:w-[320px] text-[11.888px] md:text-xs xl:text-sm px-[10.26px] py-[25.47px] rounded-[17px] xl:flex flex-col md:flex-1 bg-white shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] items-center">
+              <p className="font-[600] leading-[17.832px] text-[#666]">
+                Traditional Pots
+              </p>
+              <div className="mt-[52px] md:text-xs leading-[17.832px] gap-[9px] md:gap-[11px] font-[600] flex flex-col justify-center items-center">
+                <p>Almost Everyday</p>
+                <p>Overwatering & Underwatering</p>
+                <p>Slower</p>
+                <p>More</p>
+                <BiX className="text-[#FF0000]" />
+                <BiX className="text-[#FF0000]" />
+                <BiX className="text-[#FF0000]" />
+                <BiX className="text-[#FF0000]" />
+              </div>
+            </div>
           </div>
 
-          <div className="mt-[50.59px] w-full text-sm leading-[21px] px-[40px] py-[10px] rounded-[37px] flex justify-between font-[600] bg-[#9A5CF51A] text-[#666]">
-            <p>Our Hydroponics Pot</p>
-            <p>Traditional Pots</p>
+          <div className="mt-[50.59px] w-full md:w-fit text-sm leading-[21px] px-[40px] md:px-0 py-[10px] md:py-0 rounded-[37px] flex xl:hidden justify-between font-[600] bg-[#9A5CF51A] text-[#666]">
+            <p className="px-5 py-2 rounded-[46px] text-white bg-primaryMain">
+              Our Hydroponics Pot
+            </p>
+            <p className="px-5 py-2 rounded-[46px]">Traditional Pots</p>
           </div>
         </div>
       </div>
 
       {/* Loved By Buyers */}
-      <div className="mt-[65px] max-w-[361px] w-full flex flex-col justify-center items-center">
+      <div className="mt-[65px] md:mt-[144px] xl:mt-[226px] max-w-[361px] md:max-w-[754px] xl:max-w-[1312px] w-full flex flex-col justify-center items-center">
         <div className="w-full flex justify-between items-center">
-          <p className="text-2xl leading-[49.4px] font-normal text-[#0E0E0E]">
+          <p className="text-2xl md:text-4xl xl:text-[38px] leading-[49.4px] xl:leading-[49.4px] font-normal text-[#0E0E0E]">
             Loved by buyers
           </p>
-          <Image src="/rightArr.svg" alt="img" width={18} height={19} />
+          <div className="flex gap-[9.14px] xl:pb-3 xl:border-b-[1px] xl:border-[#BBBBBB]">
+            <p className="hidden xl:flex">Browse all products</p>
+            <Image src="/rightArr.svg" alt="img" width={18} height={19} />
+          </div>
         </div>
 
-        <div className="w-full">
+        <div className="xl:hidden w-full grid grid-cols-1 md:grid-cols-2 md:gap-x-[36.45px]">
           <Loved />
           <Loved />
+          <Loved />
+          <Loved />
+          <Loved />
+          <Loved />
+        </div>
+
+        <div className="mt-[26.94px] hidden xl:flex w-full h-fit gap-[39px]">
+          <div className="rounded-[44px] flex-1 h-fit">
+            <div className="relative h-fit">
+              <div className="h-fit">
+                <Image
+                  className="object-contain rounded-[44px]"
+                  src="/loved0.png"
+                  alt="img"
+                  width={636}
+                  height={796}
+                />
+                <div className="mt-10">
+                  <p className="text-[21px] leading-[25.2px] text-[000]">
+                    Plant 2
+                  </p>
+                  <p className="mt-[13.96px] text-[17px] leading-5 text-[#0E0E0E]">
+                    $349.99 USD
+                  </p>
+                </div>
+              </div>
+              <div className="text-[13px] leading-4 tracking-[0.56px] uppercase text-[#333] rounded-[40px] px-[14px] py-[13px] absolute top-[24.05px] left-[24.5px] font-normal bg-white">
+                <p>In Stock</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 grid grid-cols-2 gap-x-[39.58px] gap-y-16">
+            <div className="w-[298px] h-fit rounded-[44px]">
+              <div className="relative">
+                <Image
+                  className="object-contain"
+                  src="/loved2.png"
+                  alt="img"
+                  width={298}
+                  height={315}
+                />
+                <div className="text-[13px] leading-4 tracking-[0.56px] uppercase text-[#333] rounded-[40px] px-[14px] py-[13px] absolute top-[24.05px] left-[24.5px] font-normal bg-white">
+                  <p>In Stock</p>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <p className="text-[21px] leading-[25.2px] text-[000]">
+                  Plant 2
+                </p>
+                <p className="mt-[13.96px] text-[17px] leading-5 text-[#0E0E0E]">
+                  $349.99 USD
+                </p>
+              </div>
+            </div>
+            <div className="w-[298px] h-fit rounded-[44px]">
+              <div className="relative">
+                <Image
+                  className="object-contain"
+                  src="/loved3.png"
+                  alt="img"
+                  width={298}
+                  height={315}
+                />
+                <div className="text-[13px] leading-4 tracking-[0.56px] uppercase text-[#333] rounded-[40px] px-[14px] py-[13px] absolute top-[24.05px] left-[24.5px] font-normal bg-white">
+                  <p>In Stock</p>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <p className="text-[21px] leading-[25.2px] text-[000]">
+                  Plant 2
+                </p>
+                <p className="mt-[13.96px] text-[17px] leading-5 text-[#0E0E0E]">
+                  $349.99 USD
+                </p>
+              </div>
+            </div>
+            <div className="w-[298px] h-fit rounded-[44px]">
+              <div className="relative">
+                <Image
+                  className="object-contain"
+                  src="/loved4.png"
+                  alt="img"
+                  width={298}
+                  height={315}
+                />
+                <div className="text-[13px] leading-4 tracking-[0.56px] uppercase text-[#333] rounded-[40px] px-[14px] py-[13px] absolute top-[24.05px] left-[24.5px] font-normal bg-white">
+                  <p>In Stock</p>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <p className="text-[21px] leading-[25.2px] text-[000]">
+                  Plant 2
+                </p>
+                <p className="mt-[13.96px] text-[17px] leading-5 text-[#0E0E0E]">
+                  $349.99 USD
+                </p>
+              </div>
+            </div>
+            <div className="w-[298px] h-fit rounded-[44px]">
+              <div className="relative">
+                <Image
+                  className="object-contain"
+                  src="/loved5.png"
+                  alt="img"
+                  width={298}
+                  height={315}
+                />
+                <div className="text-[13px] leading-4 tracking-[0.56px] uppercase text-[#333] rounded-[40px] px-[14px] py-[13px] absolute top-[24.05px] left-[24.5px] font-normal bg-white">
+                  <p>In Stock</p>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <p className="text-[21px] leading-[25.2px] text-[000]">
+                  Plant 2
+                </p>
+                <p className="mt-[13.96px] text-[17px] leading-5 text-[#0E0E0E]">
+                  $349.99 USD
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Join THE AV Family  World's first customizable hydroponic pots. */}
-      <div className="mt-[67px] max-w-[361px] w-full">
-        <div className="w-full flex flex-col gap-5">
-          <p className="text-[40px] leading-[48px] -tracking-[1px] font-normal text-primaryGrayscale">
-            Join THE AV Family World&apos;s first customizable hydroponic pots.
+      <div className="mt-[67px] md:mt-[103px] xl:mt-[160px] w-screen flex flex-col justify-center items-center overflow-hidden">
+        <div className=" max-w-[361px] md:max-w-[754px] xl:max-w-[1065px] w-full flex flex-col gap-5">
+          <p className="text-[40px] md:text-4xl leading-[48px] -tracking-[1px] md:text-center font-normal text-primaryGrayscale">
+            Join THE AV Family <br className="hidden md:block" /> World&apos;s
+            first customizable hydroponic pots.
           </p>
-          <p className="w-[272px] text-sm leading-6 font-normal text-secondaryGrayscale">
+          <p className="w-[272px] md:w-full text-sm leading-6 text-center font-normal text-secondaryGrayscale">
             &quot;Unlock The Biophile Inside You: Embrace Your Connection With
             Nature !&quot;
           </p>
         </div>
 
-        <div className="mt-[90px]">
+        <div className="mt-[90px] flex flex-col xl:flex-row xl:gap-[29px] justify-center items-center">
+          <Image
+            className="hidden xl:flex cursor-pointer"
+            src="/leftArrow1.svg"
+            alt="leftArrow1"
+            width={13}
+            height={26}
+          />
           <Testimonial />
+          <Image
+            className="hidden xl:flex cursor-pointer"
+            src="/rightArrow1.svg"
+            alt="rightArrow1"
+            width={13}
+            height={26}
+          />
+        </div>
+
+        <div className="hidden mt-[109.5px] w-full md:flex flex-col justify-center items-center">
+          <div className="w-[1595px] flex justify-center items-center gap-10 overflow-hidden">
+            <Image
+              className="object-contain w-[505px] h-[413px]"
+              src="/testimonial1.png"
+              alt="img"
+              width={505}
+              height={413}
+            />
+            <Image
+              className="object-contain w-[505px] h-[413px]"
+              src="/testimonial1.png"
+              alt="img"
+              width={505}
+              height={413}
+            />
+            <Image
+              className="object-contain w-[505px] h-[413px]"
+              src="/testimonial1.png"
+              alt="img"
+              width={505}
+              height={413}
+            />
+          </div>
+
+          <div className="mt-[43px] w-full flex gap-10 justify-center items-center">
+            <Image
+              src="/leftArrow1.svg"
+              alt="leftArrow1"
+              width={13}
+              height={26}
+            />
+            <Image
+              src="/rightArrow1.svg"
+              alt="rightArrow1"
+              width={13}
+              height={26}
+            />
+          </div>
         </div>
       </div>
 
       {/* What we offer ? */}
-      <div className="mt-[80px] max-w-[361px] w-full flex flex-col justify-center items-center">
-        <p className="text-[50px] leading-[60px] -tracking-[1.25px] font-normal text-primaryGrayscale">
+      <div className="mt-[80px] md:mt-[160px] max-w-[361px] md:max-w-[754px] xl:max-w-[991px] w-full flex flex-col justify-center items-center">
+        <p className="text-[50px] md:text-4xl xl:text-[50px] leading-[60px] md:leading-[43.2px] xl:leading-[60px] -tracking-[1.25px] md:-tracking-[0.9px] xl:-tracking-[1.25px] font-normal text-primaryGrayscale">
           What we offer ?
         </p>
 
-        {/* Contentd */}
-        <div className="mt-[64px] max-w-[291px] w-full flex flex-col gap-[60px]">
-          <div className="w-full flex flex-col gap-4 justify-center items-center">
-            <Image src="/drugs.png" alt="img" width={80} height={80} />
+        {/* Content */}
+        <div className="mt-[64px] w-full flex flex-col md:flex-row gap-[60px]">
+          <div className="w-full flex flex-col gap-4 justify-center items-center md:justify-start">
+            <Image
+              className="md:w-[48px] md:h-[48px]"
+              src="/drugs.png"
+              alt="img"
+              width={80}
+              height={80}
+            />
 
             <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
               Fertiliser Tablets
@@ -377,8 +676,14 @@ export default function Home() {
               Cost.
             </p>
           </div>
-          <div className="w-full flex flex-col gap-4 justify-center items-center">
-            <Image src="/warranty.png" alt="img" width={80} height={80} />
+          <div className="w-full flex flex-col gap-4 justify-center items-center md:justify-start">
+            <Image
+              className="md:w-[48px] md:h-[48px]"
+              src="/warranty.png"
+              alt="img"
+              width={80}
+              height={80}
+            />
 
             <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
               2 Years Warranty
@@ -389,8 +694,14 @@ export default function Home() {
               will accordingly provide a replacement for it.
             </p>
           </div>
-          <div className="w-full flex flex-col gap-4 justify-center items-center">
-            <Image src="/agriculture.png" alt="img" width={80} height={80} />
+          <div className="w-full flex flex-col gap-4 justify-center items-center md:justify-start">
+            <Image
+              className="md:w-[48px] md:h-[48px]"
+              src="/agriculture.png"
+              alt="img"
+              width={80}
+              height={80}
+            />
 
             <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
               Local Farm Visit
@@ -404,7 +715,7 @@ export default function Home() {
         </div>
 
         {/* Buttons */}
-        <div className="mt-[52px] md:mt-8 w-full text-base font-medium flex gap-7 justify-center xl:justify-start items-center">
+        <div className="mt-[52px] md:mt-8 w-full text-base font-medium flex gap-7 justify-center items-center">
           <button className="px-[42px] py-[18px] rounded-[100px] text-white bg-primaryMain">
             Shop now
           </button>
@@ -413,6 +724,15 @@ export default function Home() {
           </button>
         </div>
       </div>
+
+      {/* Blogs */}
+      <RelatedBlog
+        title="Explore Our Blog for Green Inspiration"
+        description="Our blog is filled with informative and inspiring content on all things green. From plant care tips and advice to the latest trends in gardening and design, our experts share their knowledge to help you bring your indoor and outdoor spaces to life."
+      />
+
+      {/* Contact */}
+      <Contact />
     </div>
   );
 }

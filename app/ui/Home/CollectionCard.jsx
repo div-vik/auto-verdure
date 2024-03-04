@@ -4,7 +4,7 @@ import React from "react";
 
 const CollectionCard = () => {
   return (
-    <div className="w-fit h-fit md:h-fit p-3 md:p-0 md:flex flex-row-reverse rounded-xl md:rounded-[32.1px] md:overflow-hidden bg-[#F8F8F8]">
+    <div className="w-fit h-fit md:h-fit p-3 md:p-0 md:flex flex-row-reverse rounded-xl md:rounded-[32.1px] xl:rounded-[56px] md:overflow-hidden bg-[#F8F8F8]">
       <Image
         className="object-contain md:w-[203.231px] md:h-full xl:w-[355px]"
         src="/newCollection.png"

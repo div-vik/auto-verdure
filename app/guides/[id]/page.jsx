@@ -1,5 +1,5 @@
-import { guides } from "@/app/constant/data";
-import GuideCard from "@/app/ui/GuideCard.jsx/GuideCard";
+import Contact from "@/app/ui/Contact";
+import RelatedBlog from "@/app/ui/RelatedBlog";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -203,49 +203,16 @@ const SingleBlog = () => {
       </div>
 
       {/* Related Blog */}
-      <div className="w-full px-4 md:px-[70px] xl:px-[120px] 2xl:px-[250px] flex flex-col justify-center items-center">
-        <div className="mt-20 w-full flex flex-col justify-center items-center">
-          <div className="sm:w-[352px] md:w-full xl:w-[872px] flex flex-col gap-5 justify-center items-center md:justify-center md:items-center md:text-center">
-            <p className="text-[40px] leading-[48px] -tracking-[1px] text-primaryGrayscale font-normal text-center">
-              Related Blog
-            </p>
-            <p className="text-sm leading-6 font-normal text-secondaryGrayscale text-center md:text-center">
-              Our blog is filled with informative and inspiring content on all
-              things green. From plant care tips and advice to the latest trends
-              in gardening and design, our experts share their knowledge to help
-              you bring your indoor and outdoor spaces to life.
-            </p>
-          </div>
+      <RelatedBlog
+        title="Related Blog"
+        description="Our blog is filled with informative and inspiring content on all
+            things green. From plant care tips and advice to the latest trends
+            in gardening and design, our experts share their knowledge to help
+            you bring your indoor and outdoor spaces to life."
+      />
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[41px] md:gap-y-[57px] xl:gap-y-[73px] md:gap-x-[55px] xl:gap-x-[41px]">
-            {guides.map((guide, index) => (
-              <GuideCard guide={guide} key={index} />
-            ))}
-          </div>
-        </div>
-
-        {/* Explore More */}
-        <div className="mt-[33px] w-fit px-[42px] py-[18px] text-base font-normal border-[1px] border-primaryGrayscale rounded-[100px] cursor-pointer">
-          <Link href="#">Explore More</Link>
-        </div>
-
-        {/* Contact Us */}
-        <div className="w-full mt-[64.6px] px-[23px] pt-[39px] pb-[20px] xl:px-[100px] xl:pt-[110px] xl:pb-[94px] rounded-[24px] bg-primaryCream md:flex flex-col justify-center items-center">
-          <p className="mb-4 text-[32px] leading-[48px] -tracking-[0.8px] font-normal md:text-center">
-            Book a call with an expert to guide you through auto farming For a
-            desired healthier lifestyle
-          </p>
-          <p className="xl:w-[805px] text-sm leading-6 font-normal text-secondaryGrayscale md:text-center">
-            At Auto verdure, we know that selecting the right plants for your
-            space can be a daunting task. That&apos;s why we offer personalized
-            plant consultation services to help you make informed decisions
-            about your indoor and outdoor greenery.
-          </p>
-          <div className="mt-6 w-fit px-[42px] py-[18px] rounded-[100px] text-base bg-primaryMain font-normal cursor-pointer">
-            <p>Contact us</p>
-          </div>
-        </div>
-      </div>
+      {/* Contact Us */}
+      <Contact />
     </div>
   );
 };
