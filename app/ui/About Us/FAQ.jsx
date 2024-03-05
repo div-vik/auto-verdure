@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Accordian from "./Accordian";
+import Accordion from "./Accordion";
 import {
   generalQuestions,
   paymentQuestions,
@@ -11,18 +11,18 @@ import {
 const FAQ = () => {
   const [faq, setFaq] = useState("general questions");
 
-  const accordian = (faq) => {
+  const accordion = (faq) => {
     if (faq === "general questions") {
       return generalQuestions.map((item, index) => (
-        <Accordian key={index} question={item.question} answer={item.answer} />
+        <Accordion key={index} question={item.question} answer={item.answer} />
       ));
     } else if (faq === "product questions") {
       return productQuestions.map((item, index) => (
-        <Accordian key={index} question={item.question} answer={item.answer} />
+        <Accordion key={index} question={item.question} answer={item.answer} />
       ));
     } else if (faq === "payment questions") {
       return paymentQuestions.map((item, index) => (
-        <Accordian key={index} question={item.question} answer={item.answer} />
+        <Accordion key={index} question={item.question} answer={item.answer} />
       ));
     }
   };
@@ -78,7 +78,7 @@ const FAQ = () => {
       </div>
 
       {/* FAQs */}
-      {accordian(faq)}
+      {accordion(faq)}
     </div>
   );
 };

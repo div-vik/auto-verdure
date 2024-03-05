@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
-const Accordian = ({ question, answer }) => {
+const Accordion = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -36,4 +36,4 @@ const Accordian = ({ question, answer }) => {
   );
 };
 
-export default Accordian;
+export default Accordion;
