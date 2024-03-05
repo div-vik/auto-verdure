@@ -10,7 +10,7 @@ import Contact from "./ui/Home/Contact";
 
 export default function Home() {
   return (
-    <div className="w-full px-4 pb-[100px] md:px-10 bg-[#FFFCF8] flex flex-col justify-center items-center">
+    <div className="w-full px-4 pb-[100px] md:px-10 bg-[#FFFCF8] flex flex-col justify-center items-center overflow-hidden">
       {/* Hero */}
       <div className="max-w-[361px] flex flex-col gap-3 justify-center items-center">
         <div>
