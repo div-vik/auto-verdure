@@ -33,7 +33,7 @@ export const quickLinks = [
 
 export const support = [
   { title: "About Us", url: "/about-us" },
-  { title: "Contact Us", url: "/contact-us" },
+  { title: "Contact Us", url: "/contact" },
   { title: "FAQ", url: "/faq" },
   { title: "Terms & Conditions", url: "/terms-&-conditions" },
   { title: "Shipping Policy", url: "/shipping-policy" },
