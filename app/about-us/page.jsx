@@ -3,15 +3,16 @@ import React from "react";
 import AboutUsCard from "../ui/About Us/AboutUsCard";
 import { aboutUs } from "../constant/data";
 import FAQ from "../ui/About Us/FAQ";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
     <div className="w-full px-4 pt-[44px] pb-[124px] md:px-[28px] md:py-[116px] xl:px-[119.99px] xl:pt-[114px] xl:pb-[151px] 2xl:px-[200px] 2xl:py-[116px] bg-[#FFFCF8] flex flex-col justify-center items-center">
       {/* Title */}
-      <div className="w-full relative">
+      <div className="max-w-[219px] md:max-w-[382px] w-full relative">
         <div>
           <Image
-            className="object-contain absolute -top-5 left-0 md:top-6 md:left-[50px] lg:left-[100px] xl:left-[150px] -rotate-45 md:rotate-45 transform scale-x-100 md:-scale-x-100"
+            className="object-contain absolute -top-[20.5px] -left-[70px] md:top-6 md:-left-[120px] xl:-left-[247px] -rotate-45 md:rotate-45 transform scale-x-100 md:-scale-x-100"
             src="/leaf.png"
             alt="leaf"
             width={58}
@@ -24,13 +25,16 @@ const AboutUs = () => {
           </div>
           <div className="mt-3 md:mt-6 text-base font-medium">
             <p className="text-secondaryGrayscale">
-              <span className="text-primaryMain">Home</span> / About Us
+              <Link href="/">
+                <span className="text-primaryMain">Home</span>
+              </Link>{" "}
+              / About Us
             </p>
           </div>
         </div>
         <div>
           <Image
-            className="object-contain absolute top-[59px] right-0 md:-top-[10px] md:right-[70px] lg:right-[150px] xl:top-[30px] rotate-45 md:-rotate-45"
+            className="object-contain absolute top-[38.5px] -right-[70px] md:-top-[10px] md:-right-[118px] xl:top-[41.5px] xl:-right-[222px] rotate-45 md:-rotate-45"
             src="/leaf.png"
             alt="leaf"
             width={58}
@@ -40,7 +44,7 @@ const AboutUs = () => {
       </div>
 
       {/* Horizontal Line */}
-      <div className="mt-16 md:mt-[72px] w-full border-[1px] border-black border-opacity-[11%]" />
+      <div className="mt-16 md:mt-[72px] xl:mt-[72.5px] w-full border-[1px] border-black border-opacity-[11%]" />
 
       {/* About Us Content */}
       <div className="mt-[45px] md:mt-[100.5px] w-full">

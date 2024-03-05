@@ -1,14 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Privacy = () => {
   return (
     <div className="w-full px-4 pt-[44px] pb-[59px] md:px-[28px] md:py-[116px] xl:px-[119.99px] xl:pt-[114px] xl:pb-[192.5px] 2xl:px-[200px] 2xl:py-[116px] bg-[#FFFCF8] flex flex-col justify-center items-center">
       {/* Title */}
-      <div className="w-full relative">
+      <div className="max-w-[219px] md:max-w-[382px] w-full relative">
         <div>
           <Image
-            className="object-contain absolute top-0 left-0 md:top-6 md:left-[50px] lg:left-[100px] xl:left-[150px] -rotate-45 md:rotate-45 transform scale-x-100 md:-scale-x-100"
+            className="object-contain absolute -top-[30px] -left-[70px] md:top-6 md:-left-[120px] xl:-top-[25.5px] xl:-left-[320px] -rotate-45 md:rotate-45 transform scale-x-100 md:-scale-x-100"
             src="/leaf.png"
             alt="leaf"
             width={58}
@@ -21,13 +22,16 @@ const Privacy = () => {
           </div>
           <div className="mt-3 md:mt-6 text-base font-medium">
             <p className="text-secondaryGrayscale">
-              <span className="text-primaryMain">Home</span> / Privacy Policy
+              <Link href="/">
+                <span className="text-primaryMain">Home</span>
+              </Link>{" "}
+              / Privacy Policy
             </p>
           </div>
         </div>
         <div>
           <Image
-            className="object-contain absolute top-[59px] right-0 md:-top-[10px] md:right-[70px] lg:right-[150px] xl:top-[30px] rotate-45 md:-rotate-45"
+            className="object-contain absolute top-[25px] -right-[70px] md:-top-[10px] md:-right-[96px] xl:top-[30px] xl:-right-[200px] rotate-[95deg] md:-rotate-45"
             src="/leaf.png"
             alt="leaf"
             width={58}
@@ -37,7 +41,7 @@ const Privacy = () => {
       </div>
 
       {/* Horizontal Line */}
-      <div className="mt-16 md:mt-[72px] xl:mt-[100px] w-full border-[1px] border-black border-opacity-[11%]" />
+      <div className="mt-16 md:mt-[72px] xl:mt-[72.5px] w-full border-[1px] border-black border-opacity-[11%]" />
 
       {/* Content */}
       <div className="mt-[80px] md:mt-[72px] max-w-screen md:max-w-[655px] xl:max-w-[778px] w-full flex flex-col justify-center items-center">
