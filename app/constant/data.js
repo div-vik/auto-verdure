@@ -40,6 +40,14 @@ export const support = [
   { title: "Privacy Policy", url: "/privacy-policy" },
 ];
 
+export const storeNavItems = [
+  { title: "all", url: "/store" },
+  { title: "zenpot", url: "/store/zenpot" },
+  { title: "grobox", url: "/store/grobox" },
+  { title: "plants", url: "/store/plants" },
+  { title: "accessory", url: "/store/accessory" },
+];
+
 export const guides = [
   {
     blogImg: "/blogImage.png",
@@ -346,5 +354,176 @@ export const paymentQuestions = [
     question: "How does Autoverdure prioritize customer satisfaction?",
     answer:
       "Our plant rental service includes a selection of high-quality, low-maintenance plants that are perfect for any indoor environment. From small desk plants to large statement pieces, we have a range of options to suit your needs. Our plants are sourced from local growers and are carefully chosen for their health and beauty.",
+  },
+];
+
+export const plants = [
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/plant.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+];
+
+export const zenpot = [
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/zenpot.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+];
+
+export const grobox = [
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
+  },
+  {
+    title: "Anthurium",
+    image: "/grobox.png",
+    description: "Imagine being transported to a tranquil garden oasis.",
+    price: "349.99",
   },
 ];
