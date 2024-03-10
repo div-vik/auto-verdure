@@ -1,11 +1,14 @@
+"use client";
+
 import { grobox } from "@/app/constant/data";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import Testimonial from "../Testimonial";
 
 const SingleProductPage = () => {
+  const [size, setSize] = useState("");
   return (
     <div className="w-full px-[18px] sm:px-[38px] xl:px-16 bg-[#FFFCF8]">
       <div className="pt-[13px] sm:pt-[29px] xl:pt-[96.5px] pb-[221px] flex flex-col justify-center items-center">
@@ -25,7 +28,7 @@ const SingleProductPage = () => {
         {/* Product Details */}
         <div className="mt-[27.79px] sm:mt-[17.3px] xl:mt-[51.5px] xl:max-w-[1312px] w-full flex flex-col sm:flex-row sm:gap-x-[30.5px] xl:gap-x-16 justify-center items-center sm:items-start">
           {/* Product Image */}
-          <div className="w-full sm:flex sm:flex-col sm:flex-1">
+          <div className="w-full sm:flex sm:flex-col sm:w-[50%] xl:w-[624px]">
             <div className="w-full relative">
               <Image
                 className="object-contain w-full h-full"
@@ -80,7 +83,7 @@ const SingleProductPage = () => {
           </div>
 
           {/* Product Description */}
-          <div className="mt-[31px] sm:flex sm:flex-col sm:flex-1 sm:mt-0 w-full">
+          <div className="mt-[31px] sm:flex sm:flex-col sm:w-[50%] xl:w-[624px] sm:mt-0 w-full">
             {/* Product Title */}
             <div className="text-[51px] leading-[64px] font-normal text-[#0E0E0E]">
               <p>Grobox</p>
@@ -92,6 +95,43 @@ const SingleProductPage = () => {
                 zenpot nurtures your plant while adding a touch of serenity to
                 your living
               </p>
+            </div>
+
+            {/* Features */}
+            <div className="mt-[21.5px] w-full sm:w-fit xl:w-full flex flex-row sm:flex-col xl:flex-row sm:gap-y-3 xl:gap-x-[22px] justify-between xl:justify-start">
+              <div className="flex gap-2 sm:gap-3 justify-between sm:justify-start xl:justify-between items-center">
+                <Image
+                  src="/veterinary.png"
+                  alt="veterinary"
+                  width={32}
+                  height={32}
+                />
+                <p className="text-[13px] leading-[15.6px] -tracking-[0.325px] font-normal text-[#000000]">
+                  Pet Friendly
+                </p>
+              </div>
+              <div className="flex gap-2 sm:gap-3 justify-between sm:justify-start xl:justify-between items-center">
+                <Image
+                  src="/noLight.png"
+                  alt="noLight"
+                  width={32}
+                  height={32}
+                />
+                <p className="text-[13px] leading-[15.6px] -tracking-[0.325px] font-normal text-[#000000]">
+                  Need Less light
+                </p>
+              </div>
+              <div className="flex gap-2 sm:gap-3 justify-between sm:justify-start xl:justify-between items-center">
+                <Image
+                  src="/brightness.png"
+                  alt="brightness"
+                  width={32}
+                  height={32}
+                />
+                <p className="text-[13px] leading-[15.6px] -tracking-[0.325px] font-normal text-[#000000]">
+                  Needs More light
+                </p>
+              </div>
             </div>
 
             {/* Product Price */}
@@ -106,15 +146,36 @@ const SingleProductPage = () => {
                 <p className="text-sm font-normal">Size</p>
 
                 <div className="mt-[12px] w-[122px] flex gap-4">
-                  <div className="w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-20 hover:bg-opacity-100 cursor-pointer text-[#fff] uppercase font-normal flex justify-center items-center">
+                  <button
+                    onClick={() => setSize("L")}
+                    className={
+                      size === "L"
+                        ? "w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-100 cursor-pointer text-[#fff] uppercase font-normal flex justify-center items-center"
+                        : "w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-20 hover:bg-opacity-100 cursor-pointer text-[#000000] hover:text-[#fff] uppercase font-normal flex justify-center items-center"
+                    }
+                  >
                     <p>l</p>
-                  </div>
-                  <div className="w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-20 hover:bg-opacity-100 cursor-pointer text-[#fff] uppercase font-normal flex justify-center items-center">
+                  </button>
+                  <button
+                    onClick={() => setSize("XL")}
+                    className={
+                      size === "XL"
+                        ? "w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-100 cursor-pointer text-[#fff] uppercase font-normal flex justify-center items-center"
+                        : "w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-20 hover:bg-opacity-100 cursor-pointer text-[#000000] hover:text-[#fff] uppercase font-normal flex justify-center items-center"
+                    }
+                  >
                     <p>xl</p>
-                  </div>
-                  <div className="w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-20 hover:bg-opacity-100 cursor-pointer text-[#fff] uppercase font-normal flex justify-center items-center">
+                  </button>
+                  <button
+                    onClick={() => setSize("XS")}
+                    className={
+                      size === "XS"
+                        ? "w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-100 cursor-pointer text-[#fff] uppercase font-normal flex justify-center items-center"
+                        : "w-[30px] h-[30px] text-[13px] rounded-[5px] bg-[#9A5CF5] bg-opacity-20 hover:bg-opacity-100 cursor-pointer text-[#000000] hover:text-[#fff] uppercase font-normal flex justify-center items-center"
+                    }
+                  >
                     <p>xs</p>
-                  </div>
+                  </button>
                 </div>
               </div>
 
@@ -161,7 +222,7 @@ const SingleProductPage = () => {
             </div>
 
             {/* Discount Card */}
-            <div className="mt-[37.5px] sm:mt-6 w-full flex flex-col gap-6 px-2 py-2 rounded-xl border-[1px] bg-primaryMain bg-opacity-10 border-primaryMain">
+            <div className="mt-[37.5px] sm:mt-6 w-full flex flex-col gap-6 p-2 xl:p-5 rounded-xl border-[1px] bg-primaryMain bg-opacity-10 border-primaryMain">
               <div className="w-full flex justify-between items-center">
                 <div className="w-full flex gap-2 items-center">
                   <Image
@@ -171,7 +232,7 @@ const SingleProductPage = () => {
                     width={32}
                     height={32}
                   />
-                  <p className="text-sm leading-7 font-medium text-[#0C0C0C]">
+                  <p className="text-sm xl:text-[18px] leading-7 font-medium text-[#0C0C0C]">
                     Earn 9999 Points with this purchase
                   </p>
                 </div>
