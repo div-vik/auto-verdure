@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 const ProductCard = ({ product }) => {
+  const plants = true;
   const [productDetail, setProductDetail] = useState(product);
   return (
     <div className="w-full">
@@ -20,6 +20,30 @@ const ProductCard = ({ product }) => {
         <div className="w-fit text-[10px] md:text-[13px] p-1 md:px-[14px] md:py-[13px] leading-4 tracking-[0.56px] rounded-[40px] absolute top-[10px] left-[15px] md:top-[24px] md:left-[30px] bg-white text-[#5B5B5B] uppercase flex justify-center items-center">
           <p>in stock</p>
         </div>
+
+        {plants && (
+          <div className="hidden w-fit xl:flex flex-col gap-[12px] absolute top-[21.18px] right-[29px]">
+            <div className="w-[52px] h-[52px] p-[10px] rounded-2xl bg-[#FFFFFF]">
+              <Image
+                src="/veterinary.png"
+                alt="veterinary"
+                width={32}
+                height={32}
+              />
+            </div>
+            <div className="w-[52px] h-[52px] p-[10px] rounded-2xl bg-[#FFFFFF]">
+              <Image src="/noLight.png" alt="noLight" width={32} height={32} />
+            </div>
+            <div className="w-[52px] h-[52px] p-[10px] rounded-2xl bg-[#FFFFFF]">
+              <Image
+                src="/brightness.png"
+                alt="brightness"
+                width={32}
+                height={32}
+              />
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Product description */}
