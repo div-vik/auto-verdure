@@ -6,7 +6,7 @@ import TopSegment from "@/app/ui/Store/TopSegment";
 
 const Zenpot = () => {
   return (
-    <div>
+    <div className="w-full bg-[#FFFCF8]">
       <TopSegment />
 
       <div className="mt-[42px] md:mt-[58px] xl:mt-[110px] mb-[70.46px] md:mb-[124.8px] xl:mb-[142.3px] w-full flex flex-col justify-center items-center">
