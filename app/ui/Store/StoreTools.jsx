@@ -13,21 +13,22 @@ const StoreTools = () => {
           <div className="w-fit flex items-center">
             {/* Filter */}
             <div className="w-fit flex items-center">
-              <div
-                onClick={() => {
-                  setOpenFilter(!openFilter);
-                }}
-                className="w-fit flex justify-center items-center cursor-pointer"
-              >
-                <Image
-                  className="object-contain"
-                  src="/filter.svg"
-                  alt="filter"
-                  width={25}
-                  height={25}
-                />
-                <p className="ml-[9px] md:ml-3 font-normal">Filter</p>
-
+              <div>
+                <div
+                  onClick={() => {
+                    setOpenFilter(!openFilter);
+                  }}
+                  className="w-fit flex justify-center items-center cursor-pointer"
+                >
+                  <Image
+                    className="object-contain"
+                    src="/filter.svg"
+                    alt="filter"
+                    width={25}
+                    height={25}
+                  />
+                  <p className="ml-[9px] md:ml-3 font-normal">Filter</p>
+                </div>
                 {openFilter && (
                   <div className="w-[307px] sm:w-[462px] h-fit border-[1px] rounded-2xl border-[#858585] bg-[#FFFFFF] absolute top-[393px] left-[10%] sm:top-[413px] sm:left-[92px] xl:top-[470px] xl:left-[202px] z-10 overflow-hidden">
                     <div className="w-full pt-[13px] pb-[17px] px-8 rounded-2xl bg-[#F5F7FF] flex flex-col justify-center items-center">

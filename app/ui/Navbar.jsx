@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
 
         <div className="gap-4 flex justify-center items-center">
-          <div className="w-[24.53px] h-[24.53px]">
+          <Link href="/cart" className="w-[24.53px] h-[24.53px]">
             <Image
               className="object-contain"
               src="/cart.svg"
@@ -100,7 +100,7 @@ const Navbar = () => {
               width={24.53}
               height={24.53}
             />
-          </div>
+          </Link>
           <div className="w-[24.53px] h-[24.53px]">
             <Image
               className="object-contain"
