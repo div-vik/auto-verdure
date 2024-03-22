@@ -5,7 +5,6 @@ import React, { useState } from "react";
 
 const Input = ({ label, type, placeholder }) => {
   const [isVisible, setIsVisible] = useState(false);
-  console.log(type);
   return (
     <div className="w-full flex flex-col gap-y-3">
       <label className="text-2xl leading-6 capitalize font-normal text-[#070707]">
