@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const CheckoutNavbar = () => {
+  const pathname = usePathname().split("/").pop();
+  console.log(pathname);
   return (
     <div className="mt-[70px] sm:mt-[155px] xl:mt-[105px] w-full flex flex-col justify-center items-center">
       {/* Title */}
@@ -26,16 +31,46 @@ const CheckoutNavbar = () => {
         <div className="w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-primaryMain border-primaryMain text-[#F7FAFC] flex justify-center items-center">
           1
         </div>
-        <div className="w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-[#CCCCCC]" />
-        <div className="w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-transparent border-[#CCCCCC] text-[#1A202C] flex justify-center items-center">
+        <div className="w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-primaryMain" />
+        <div
+          className={
+            pathname === "shipping"
+              ? "w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-primaryMain border-primaryMain text-[#F7FAFC] flex justify-center items-center"
+              : "w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-transparent border-[#CCCCCC] text-[#1A202C] flex justify-center items-center"
+          }
+        >
           2
         </div>
-        <div className="w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-[#CCCCCC]" />
-        <div className="w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-transparent border-[#CCCCCC] text-[#1A202C] flex justify-center items-center">
+        <div
+          className={
+            pathname === "shipping"
+              ? "w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-primaryMain"
+              : "w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-[#CCCCCC]"
+          }
+        />
+        <div
+          className={
+            pathname === "payment"
+              ? "w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-primaryMain border-primaryMain text-[#F7FAFC] flex justify-center items-center"
+              : "w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-transparent border-[#CCCCCC] text-[#1A202C] flex justify-center items-center"
+          }
+        >
           3
         </div>
-        <div className="w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-[#CCCCCC]" />
-        <div className="w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-transparent border-[#CCCCCC] text-[#1A202C] flex justify-center items-center">
+        <div
+          className={
+            pathname === "payment"
+              ? "w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-primaryMain"
+              : "w-[43px] sm:w-[128px] h-[2px] rounded-lg bg-[#CCCCCC]"
+          }
+        />
+        <div
+          className={
+            pathname === "successful"
+              ? "w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-primaryMain border-primaryMain text-[#F7FAFC] flex justify-center items-center"
+              : "w-12 h-12 text-xl leading-8 border-2 rounded-full font-[600] bg-transparent border-[#CCCCCC] text-[#1A202C] flex justify-center items-center"
+          }
+        >
           4
         </div>
       </div>

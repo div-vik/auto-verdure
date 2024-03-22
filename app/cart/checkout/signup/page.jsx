@@ -1,4 +1,4 @@
-import Input from "@/app/ui/Cart/Input";
+import Input from "@/app/ui/Input";
 import Link from "next/link";
 import React from "react";
 import { BsApple, BsGoogle } from "react-icons/bs";
