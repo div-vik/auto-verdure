@@ -74,7 +74,7 @@ const Navbar = () => {
       <div className="hidden xl:flex gap-[15px]">
         <div className="w-[240px] h-[50px] pr-[17px] flex justify-between items-center border-2 border-primaryBg rounded-[999px] bg-secondaryBg">
           <input
-            className="pl-5 py-[16.6px] mr-[17px] rounded-[999px] border-r-2 w-full h-full focus:outline-black rounded-r-none bg-secondaryBg"
+            className="pl-5 py-[16.6px] z-10 mr-[17px] rounded-[999px] border-r-2 w-full h-full focus:outline-black rounded-r-none bg-secondaryBg"
             type="text"
             placeholder="Search"
             autoComplete="false"
