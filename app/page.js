@@ -10,14 +10,14 @@ import Contact from "./ui/Home/Contact";
 
 export default function Home() {
   return (
-    <div className="w-full px-4 pb-[100px] md:px-10 bg-[#FFFCF8] flex flex-col justify-center items-center overflow-hidden">
+    <div className="w-full px-4 md:px-10 pb-[100px] bg-[#FFFCF8] flex flex-col justify-center items-center overflow-hidden">
       {/* Hero */}
-      <div className="max-w-[361px] flex flex-col gap-3 justify-center items-center">
-        <div>
-          <p className="text-[50px] leading-[60px] -tracking-[1.25px] font-normal text-primaryGrayscale">
+      <div className="w-screen flex flex-col-reverse md:flex-row xl:flex-col justify-center items-center overflow-hidden">
+        <div className="max-w-[361px] xl:max-w-[622px] -mt-[140px] md:mt-0 xl:mt-[170px] z-10 flex flex-col justify-center items-center">
+          <p className="text-[50px] md:text-[64px] leading-[60px] md:leading-[76.8px] -tracking-[1.25px] md:-tracking-[1.6px] font-normal text-primaryGrayscale">
             Exquisite & Sustainable <br /> Self-Watering Planters
           </p>
-          <p className="text-sm leading-6 font-normal text-secondaryGrayscale">
+          <p className="mt-3 xl:mt-[20px] text-sm md:text-base leading-6 xl:text-center font-normal text-secondaryGrayscale">
             Relax & experience rich greenery year-round with Auto Verdure&apos;s
             live indoor & outdoor hydroponic kits. Let our planters nurture your
             plants, save your time, & enhance your lifestyle to make urban
@@ -25,7 +25,7 @@ export default function Home() {
           </p>
 
           {/* Buttons */}
-          <div className="mt-3 md:mt-8 w-full text-base font-medium flex gap-7 justify-center xl:justify-start items-center">
+          <div className="mt-3 md:mt-8 w-full text-base font-medium flex gap-7 justify-center xl:justify-center items-center">
             <button className="px-[42px] py-[18px] rounded-[100px] text-white bg-primaryMain">
               Shop now
             </button>
@@ -36,7 +36,25 @@ export default function Home() {
         </div>
 
         {/* Image */}
-        <div></div>
+        <div className="w-[267px] h-[447px] absolute top-0 right-[15px] md:right-[40px]">
+          <Image
+            className="w-full h-full xl:hidden"
+            src="/bgImage1.png"
+            alt="bgImage"
+            width={267}
+            height={447}
+          />
+        </div>
+        <div className="w-full h-[776px] absolute top-0">
+          <Image
+            className="w-full h-full hidden xl:flex"
+            src="/bgImage3.png"
+            alt="bgImage"
+            width={1550}
+            height={776}
+          />
+        </div>
+        <div className="w-[267px] h-[447px] xl:w-full xl:h-[222px]"></div>
       </div>
 
       {/* Shop The New Collection */}
