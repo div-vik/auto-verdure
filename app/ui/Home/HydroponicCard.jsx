@@ -12,7 +12,7 @@ const HydroponicCard = ({ data }) => {
       className="max-w-[373px] h-[315px] md:w-full md:h-[308.96px] xl:w-[373px] xl:h-[315px] px-8 pt-[52px] pb-[75px] rounded-3xl bg-primaryCream hover:bg-primaryMain hover:text-white ease-in-out duration-200"
     >
       <Image
-        className="object-contain md:w-[39.233px] md:h-[39.22px]"
+        className="object-contain md:w-[39.233px] md:h-[39.22px] hover:text-[#BABABA]"
         src={data.img}
         alt={data.title}
         width={40}

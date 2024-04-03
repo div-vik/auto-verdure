@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full px-4 md:px-10 pb-[100px] bg-[#FFFCF8] flex flex-col justify-center items-center overflow-hidden">
       {/* Hero */}
       <div className="w-screen flex flex-col-reverse md:flex-row xl:flex-col justify-center items-center overflow-hidden">
-        <div className="max-w-[361px] xl:max-w-[622px] -mt-[140px] md:mt-0 xl:mt-[170px] z-10 flex flex-col justify-center items-center">
+        <div className="max-w-[361px] xl:max-w-[622px] -mt-[57px] md:mt-[123px] xl:mt-[170px] z-10 flex flex-col justify-center items-center">
           <p className="text-[50px] md:text-[64px] leading-[60px] md:leading-[76.8px] -tracking-[1.25px] md:-tracking-[1.6px] font-normal text-primaryGrayscale">
             Exquisite & Sustainable <br /> Self-Watering Planters
           </p>
@@ -45,7 +45,7 @@ export default function Home() {
             height={447}
           />
         </div>
-        <div className="w-full h-[776px] absolute top-0">
+        <div className="w-full h-[776px] absolute top-0 right-[20px] bg-transparent">
           <Image
             className="w-full h-full hidden xl:flex"
             src="/bgImage3.png"
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
 
           <div className="md:mt-[72.12px] w-full flex flex-col justify-center items-center">
-            <button className="text-base px-[42px] py-[18px] rounded-[100px] border-[1px] font-normal text-primaryGrayscale">
+            <button className="text-base px-[42px] py-[18px] rounded-[100px] border-[1px] font-normal border-primaryGrayscale text-primaryGrayscale">
               About Us
             </button>
           </div>
@@ -98,8 +98,8 @@ export default function Home() {
       </div>
 
       {/* How Does it Work */}
-      <div className="mt-[15px] md:mt-[72px] xl:mt-[149.5px] w-full md:max-w-[754px] xl:max-w-[1098px] h-fit flex xl:gap-[98px] flex-col md:flex-row justify-center items-center">
-        <div className="w-full max-w-[361px] xl:max-w-[630px] flex flex-col">
+      <div className="mt-[15px] md:mt-[72px] xl:mt-[149.5px] w-full h-fit md:max-w-[754px] xl:max-w-[1098px] flex xl:gap-[98px] flex-col md:flex-row justify-center items-center">
+        <div className="w-full md:-mt-[210px] max-w-[361px] xl:max-w-[630px] flex flex-col">
           <p className="w-fit text-[40px] md:text-4xl xl:text-[50px] leading-[48px] md:leading-[48px] xl:leading-[60px] -tracking-[1px] xl:-tracking-[1.25px] font-normal text-primaryGrayscale">
             How does it work?
           </p>
@@ -113,7 +113,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-normal text-primaryGrayscale">
+                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
                   Pour
                 </p>
                 <p className="text-sm leading-6 font-normal text-secondaryGrayscale">
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-normal text-primaryGrayscale">
+                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
                   Pest Free
                 </p>
                 <p className="text-sm leading-6 font-normal text-secondaryGrayscale">
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-normal text-primaryGrayscale">
+                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
                   Optimal water
                 </p>
                 <p className="text-sm leading-6 font-normal text-secondaryGrayscale">
@@ -163,7 +163,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-normal text-primaryGrayscale">
+                <p className="text-2xl leading-[28.8px] -tracking-[0.6px] font-[600] text-primaryGrayscale">
                   Water check
                 </p>
                 <p className="text-sm leading-6 font-normal text-secondaryGrayscale">
@@ -186,7 +186,7 @@ export default function Home() {
         </div>
 
         <div className="hidden md:flex flex-col xl:w-full justify-center items-center">
-          <div className="w-fit p-10 rounded-full bg-[#F3F0F1] border-[3px] border-primaryMain">
+          <div className="w-[240px] h-[240px] flex flex-col justify-center items-center p-10 rounded-full bg-[#F3F0F1] border-[3px] border-primaryMain">
             <Image
               className="object-contain"
               src="/pour.png"
@@ -195,7 +195,7 @@ export default function Home() {
               height={160}
             />
           </div>
-          <div className="w-fit relative bottom-[60px] left-[75px] p-10 rounded-full bg-[#F3F0F1] border-[3px] border-primaryMain">
+          <div className="w-[240px] h-[240px] flex flex-col justify-center items-center relative bottom-[90px] left-[160px] p-10 rounded-full bg-[#F3F0F1] border-[3px] border-primaryMain">
             <Image
               className="object-contain"
               src="/pest.png"
@@ -204,7 +204,7 @@ export default function Home() {
               height={160}
             />
           </div>
-          <div className="w-fit relative bottom-[120px] p-10 rounded-full bg-[#F3F0F1] border-[3px] border-primaryMain">
+          <div className="w-[240px] h-[240px] flex flex-col justify-center items-center relative bottom-[170px] left-[20px] p-10 rounded-full bg-[#F3F0F1] border-[3px] border-primaryMain">
             <Image
               className="object-contain"
               src="/check.png"
@@ -260,7 +260,7 @@ export default function Home() {
         </div>
 
         <div className="mt-[58px] hidden w-full md:flex flex-col justify-center items-center">
-          <button className="text-base px-[42px] py-[18px] rounded-[100px] border-[1px] font-normal text-primaryGrayscale">
+          <button className="text-base px-[42px] py-[18px] rounded-[100px] border-[1px] border-primaryGrayscale font-normal text-primaryGrayscale">
             About Us
           </button>
         </div>
@@ -396,9 +396,9 @@ export default function Home() {
 
         <div className="mt-[47.41px] md:mt-[73px] xl:mt-[82px] w-full md:flex flex-col justify-center items-center">
           <div className="w-full md:w-[523px] xl:w-fit flex md:gap-x-5 rounded-[16.4px]">
-            <div className="w-full xl:w-[320px] flex flex-col md:flex-1 gap-5 text-[11.488px] md:text-xs p-[24.62px] font-[600] leading-[17.232px] md:leading-[17.832px] rounded-tl-[16.4px] rounded-bl-[16.4px] md:rounded-[16.4px] shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] bg-[#fff]">
-              <p className="">How we are different.</p>
-              <div className="mt-[32.82px] w-full flex flex-col gap-[8.21px] text-[#666666]">
+            <div className="w-full xl:w-[320px] flex flex-col md:flex-1 gap-5 text-[11.888px] md:text-xs xl:text-sm p-[24.62px] font-[600] leading-[17.232px] md:leading-[17.832px] rounded-tl-[16.4px] rounded-bl-[16.4px] md:rounded-[16.4px] shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] bg-[#fff]">
+              <p className="font-[600] leading-[17.832px]">Transformation</p>
+              <div className="mt-[32.82px] w-full flex flex-col  gap-[10px] md:gap-[8.21px] xl:gap-[10px] text-[#666666]">
                 <p>Plant Watering</p>
                 <p>Minimal Water Wastage</p>
                 <p>Rate of Produce Growth</p>
@@ -410,19 +410,22 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full xl:w-[320px] text-[11.888px] md:text-xs xl:text-sm px-[10.26px] py-[25.47px] scale-105 border-[2.55px] rounded-[17px] border-primaryMain flex flex-col md:flex-1 bg-white shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] items-center">
+            <div className="w-full xl:w-[320px] text-[11.888px] md:text-xs xl:text-sm px-[10.26px] py-[25.47px] gap-5 scale-105 border-[2.55px] rounded-[17px] border-primaryMain flex flex-col md:flex-1 bg-white shadow-[0_16.412px_49.235px_-2.051px_rgba(0,0,0,0.05)] items-center">
               <p className="font-[600] leading-[17.832px] text-[#666]">
                 Our Hydroponic Pot
               </p>
-              <div className="mt-[52px] md:text-xs leading-[17.832px] gap-[9px] md:gap-[11px] flex flex-col justify-center items-center">
+              <div className="mt-[32.82px] w-full leading-[17.832px] gap-[10px] md:gap-[8.21px] xl:gap-[10px] flex flex-col justify-center items-center">
                 <p>Once 30-45 Days</p>
-                <p>Analytics</p>
+                <BiCheck className="text-[#00FF66]" />
                 <p>Faster</p>
                 <p>Less</p>
-                <BiCheck className="text-[#00FF66]" />
-                <BiCheck className="text-[#00FF66]" />
-                <BiCheck className="text-[#00FF66]" />
-                <BiCheck className="text-[#00FF66]" />
+                <div className="md:mt-[2px] xl:mt-[8px] flex flex-col gap-[10px] md:gap-[15px] xl:gap-[15px] justify-center items-center">
+                  <BiCheck className="text-[#00FF66] text-[11.888px] md:text-xs xl:text-sm" />
+                  <BiCheck className="text-[#00FF66] text-[11.888px] md:text-xs xl:text-sm" />
+                  <span className="invisible md:hidden">auto verdure</span>
+                  <BiCheck className="text-[#00FF66] text-[11.888px] md:text-xs xl:text-sm" />
+                  <BiCheck className="text-[#00FF66] text-[11.888px] md:text-xs xl:text-sm" />
+                </div>
               </div>
             </div>
 
@@ -430,15 +433,17 @@ export default function Home() {
               <p className="font-[600] leading-[17.832px] text-[#666]">
                 Traditional Pots
               </p>
-              <div className="mt-[52px] md:text-xs leading-[17.832px] gap-[9px] md:gap-[11px] font-[600] flex flex-col justify-center items-center">
+              <div className="mt-[52px] leading-[17.832px] gap-[10px] md:gap-[8.21px] xl:gap-[10px] font-[600] flex flex-col justify-center items-center">
                 <p>Almost Everyday</p>
                 <p>Overwatering & Underwatering</p>
                 <p>Slower</p>
                 <p>More</p>
-                <BiX className="text-[#FF0000]" />
-                <BiX className="text-[#FF0000]" />
-                <BiX className="text-[#FF0000]" />
-                <BiX className="text-[#FF0000]" />
+                <div className="md:mt-[2px] xl:mt-[8px] flex flex-col gap-[10px] md:gap-[15px] xl:gap-[15px]">
+                  <BiX className="text-[#FF0000]" />
+                  <BiX className="text-[#FF0000]" />
+                  <BiX className="text-[#FF0000]" />
+                  <BiX className="text-[#FF0000]" />
+                </div>
               </div>
             </div>
           </div>

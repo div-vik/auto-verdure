@@ -4,6 +4,7 @@ import AboutUsCard from "../ui/About Us/AboutUsCard";
 import { aboutUs } from "../constant/data";
 import FAQ from "../ui/About Us/FAQ";
 import Link from "next/link";
+// import video from "@/public/aboutUsVideo.mp4";
 
 const AboutUs = () => {
   return (
@@ -136,13 +137,15 @@ const AboutUs = () => {
                 width={58}
                 height={41}
               />
-              <Image
-                className="object-contain w-[315.326px] h-[209.376px] md:w-[379px] md:h-[249px] xl:w-full ml-[136.22px] md:ml-[35%] lg:ml-[45%] rounded-2xl"
-                src="/blogImage.png"
-                alt="img"
-                width={315.326}
-                height={209.376}
-              />
+              <div className="w-[315.326px] h-[209.376px] md:w-[379px] md:h-[249px] xl:w-full ml-[136.22px] md:ml-[35%] lg:ml-[45%] rounded-2xl">
+                <Image
+                  className="w-full h-full rounded-2xl"
+                  src="/aboutUs2.jpg"
+                  alt="img"
+                  width={315.326}
+                  height={209.376}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +164,18 @@ const AboutUs = () => {
           </div>
 
           <div className="w-full flex flex-col gap-8 justify-center items-center">
-            <div className="w-[361px] h-[180.5px] md:w-[692px] md:h-[346px] xl:w-[1202px] xl:h-[601px] rounded-[14.1px] md:rounded-[27px] bg-primaryMain"></div>
+            <div className="w-[361px] h-[180.5px] md:w-[692px] md:h-[346px] xl:w-[1202px] xl:h-[601px] rounded-[14.1px] md:rounded-[27px] bg-primaryMain">
+              <video
+                controls
+                autoPlay
+                loop
+                preload="none"
+                className="w-full h-full rounded-[14.1px] md:rounded-[27px]"
+              >
+                <source src="/aboutUsVideo.MP4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
 
             <div className="w-full flex md:hidden gap-[21.47px] justify-between">
               <Image
