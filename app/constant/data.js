@@ -25,7 +25,7 @@ export const resourcesNavItems = [
 export const quickLinks = [
   { title: "Home", url: "/" },
   { title: "Shop", url: "/shop" },
-  { title: "Service", url: "/service" },
+  { title: "Community", url: "/community" },
   { title: "Resources", url: "/resources" },
   { title: "Disclaimer", url: "/disclaimer" },
   { title: "My Cart", url: "/my-cart" },
