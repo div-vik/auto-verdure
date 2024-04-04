@@ -48,6 +48,29 @@ export const storeNavItems = [
   { title: "accessory", url: "/store/accessory" },
 ];
 
+export const collections = [
+  {
+    title: "Zenpot",
+    description:
+      "zenpot nurtures your plant while adding a touch of serenity to your living space.",
+  },
+  {
+    title: "Growbox",
+    description:
+      "Elevate your gardening game and enjoy a bountiful harvest year round.",
+  },
+  {
+    title: "Plants",
+    description:
+      "zenpot nurtures your plant while adding a touch of serenity to your living space.",
+  },
+  {
+    title: "Accessory",
+    description:
+      "Elevate your gardening game and enjoy a bountiful harvest year round.",
+  },
+];
+
 export const guides = [
   {
     blogImg: "/blogImage.png",
