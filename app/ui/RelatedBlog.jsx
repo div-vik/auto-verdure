@@ -8,7 +8,7 @@ const RelatedBlog = ({ title, description }) => {
     <div className="w-full px-4 md:px-[70px] xl:px-[120px] 2xl:px-[250px] flex flex-col justify-center items-center">
       <div className="mt-20 w-full flex flex-col justify-center items-center">
         <div className="sm:w-[352px] md:w-full xl:w-[872px] flex flex-col gap-5 justify-center items-center md:justify-center md:items-center md:text-center">
-          <p className="text-[40px] leading-[48px] -tracking-[1px] text-primaryGrayscale font-normal text-center">
+          <p className="text-[40px] leading-[48px] -tracking-[1px] text-primaryGrayscale font-normal capitalize text-center">
             {title}
           </p>
           <p className="text-sm leading-6 font-normal text-secondaryGrayscale text-center md:text-center">

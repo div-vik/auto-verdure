@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { hydroponics } from "./constant/data";
+import { collections, hydroponics } from "./constant/data";
 import HydroponicCard from "./ui/Home/HydroponicCard";
 import CollectionCard from "./ui/Home/CollectionCard";
 import { BiCheck, BiX } from "react-icons/bi";
@@ -7,6 +7,7 @@ import Loved from "./ui/Home/Loved";
 import Testimonial from "./ui/Home/Testimonial";
 import RelatedBlog from "./ui/RelatedBlog";
 import Contact from "./ui/Home/Contact";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -59,22 +60,26 @@ export default function Home() {
 
       {/* Shop The New Collection */}
       <div className="mt-[78px] md:mt-[114px] xl:mt-[120px] max-w-[361px] md:max-w-[754px] xl:max-w-[1200px] w-full flex flex-col md:justify-center md:items-center">
-        <p className="text-[20.049px] md:text-4xl xl:text-[50px] leading-[24.059px] md:leading-[43.2px] xl:leading-[60px] -tracking-[0.501px] md:-tracking-[0.9px] xl:-tracking-[1.25px] text-primaryGrayscale font-normal">
+        <p className="text-[20.049px] md:text-4xl xl:text-[50px] leading-[24.059px] md:leading-[43.2px] xl:leading-[60px] -tracking-[0.501px] md:-tracking-[0.9px] xl:-tracking-[1.25px] text-primaryGrayscale font-normal capitalize">
           Shop The New Collection
         </p>
 
         <div className="mt-[33px] w-full grid grid-cols-2 justify-between items-center gap-x-[3px] md:gap-x-[17.17px] xl:gap-x-[30px] gap-y-[20.32px] md:gap-y-[19.46px] xl:gap-y-[34px]">
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
+          {collections.map((collection, index) => (
+            <div key={index}>
+              <CollectionCard
+                title={collection.title}
+                description={collection.description}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Hydroponic Kits */}
       <div className="mt-[20.32px] md:mt-[112.85px] xl:mt-[120px] md:max-w-[754px] w-full xl:max-w-[1200px] flex flex-col justify-center items-center">
         <div className="w-full flex flex-col justify-center items-center">
-          <div className="max-w-[320px] md:max-w-[754px] xl:max-w-[1200px] w-full flex flex-col justify-center items-center text-[40px] md:text-4xl xl:text-[50px] leading-[48px] md:leading-[43.2px] xl:leading-[43.2px] -tracking-[1px] md:-tracking-[0.9px] font-normal text-primaryGrayscale">
+          <div className="max-w-[320px] md:max-w-[754px] xl:max-w-[1200px] w-full flex flex-col justify-center items-center text-[40px] md:text-4xl xl:text-[50px] leading-[48px] md:leading-[43.2px] xl:leading-[43.2px] -tracking-[1px] md:-tracking-[0.9px] font-normal capitalize text-primaryGrayscale">
             <p>Why are our hydroponic kits the best for you?</p>
           </div>
 
@@ -100,7 +105,7 @@ export default function Home() {
       {/* How Does it Work */}
       <div className="mt-[15px] md:mt-[72px] xl:mt-[149.5px] w-full h-fit md:max-w-[754px] xl:max-w-[1098px] flex xl:gap-[98px] flex-col md:flex-row justify-center items-center">
         <div className="w-full md:-mt-[210px] max-w-[361px] xl:max-w-[630px] flex flex-col">
-          <p className="w-fit text-[40px] md:text-4xl xl:text-[50px] leading-[48px] md:leading-[48px] xl:leading-[60px] -tracking-[1px] xl:-tracking-[1.25px] font-normal text-primaryGrayscale">
+          <p className="w-fit text-[40px] md:text-4xl xl:text-[50px] leading-[48px] md:leading-[48px] xl:leading-[60px] -tracking-[1px] xl:-tracking-[1.25px] font-normal capitalize text-primaryGrayscale">
             How does it work?
           </p>
 
@@ -603,7 +608,7 @@ export default function Home() {
       {/* Join THE AV Family  World's first customizable hydroponic pots. */}
       <div className="mt-[67px] md:mt-[103px] xl:mt-[160px] w-screen flex flex-col justify-center items-center overflow-hidden">
         <div className=" max-w-[361px] md:max-w-[754px] xl:max-w-[1065px] w-full flex flex-col gap-5">
-          <p className="text-[40px] md:text-4xl leading-[48px] -tracking-[1px] md:text-center font-normal text-primaryGrayscale">
+          <p className="text-[40px] md:text-4xl leading-[48px] -tracking-[1px] md:text-center font-normal capitalize text-primaryGrayscale">
             Join THE AV Family <br className="hidden md:block" /> World&apos;s
             first customizable hydroponic pots.
           </p>
@@ -670,6 +675,15 @@ export default function Home() {
               height={26}
             />
           </div>
+        </div>
+
+        <div className="md:mt-[72.12px] w-full flex flex-col justify-center items-center">
+          <Link
+            href="/community"
+            className="text-base px-[42px] py-[18px] rounded-[100px] border-[1px] font-normal border-primaryGrayscale hover:bg-[#000000] text-primaryGrayscale hover:text-[#ffffff] ease-in-out duration-500"
+          >
+            Community
+          </Link>
         </div>
       </div>
 
