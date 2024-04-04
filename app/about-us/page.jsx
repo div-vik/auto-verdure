@@ -1,10 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import AboutUsCard from "../ui/About Us/AboutUsCard";
 import { aboutUs } from "../constant/data";
 import FAQ from "../ui/About Us/FAQ";
 import Link from "next/link";
-// import video from "@/public/aboutUsVideo.mp4";
+import { CldVideoPlayer } from "next-cloudinary";
+import "next-cloudinary/dist/cld-video-player.css";
 
 const AboutUs = () => {
   return (
@@ -114,13 +117,15 @@ const AboutUs = () => {
 
           <div className="mt-[63px] md:mt-[128.5px] xl:mt-0 w-full flex flex-col gap-[17.66px] md:gap-[21px] justify-center items-center overflow-hidden xl:overflow-visible">
             <div className="w-full h-[209.376px] md:h-[249px] flex relative">
-              <Image
-                className="object-contain w-[315.326px] h-[209.376px] md:w-[379px] md:h-[249px] md:ml-[15%] lg:ml-[25%] rounded-2xl"
-                src="/aboutImg1.png"
-                alt="img"
-                width={315.326}
-                height={209.376}
-              />
+              <div className="object-contain w-[315.326px] h-[209.376px] md:w-[379px] md:h-[249px] md:ml-[15%] lg:ml-[25%] rounded-2xl">
+                <Image
+                  className="rounded-2xl w-full h-full"
+                  src="/aboutUs1.png"
+                  alt="img"
+                  width={315.326}
+                  height={209.376}
+                />
+              </div>
               <Image
                 className="hidden md:flex xl:hidden object-contain absolute top-[72.46px] right-[100px] lg:right-[180px] -rotate-45 transform -scale-y-100"
                 src="/leaf.png"
@@ -164,17 +169,20 @@ const AboutUs = () => {
           </div>
 
           <div className="w-full flex flex-col gap-8 justify-center items-center">
-            <div className="w-[361px] h-[180.5px] md:w-[692px] md:h-[346px] xl:w-[1202px] xl:h-[601px] rounded-[14.1px] md:rounded-[27px] bg-primaryMain">
-              <video
-                controls
-                autoPlay
-                loop
-                preload="none"
-                className="w-full h-full rounded-[14.1px] md:rounded-[27px]"
-              >
-                <source src="/aboutUsVideo.MP4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="w-[100%] overflow-hidden h-[180.5px] md:w-[692px] md:h-[346px] xl:w-[1202px] xl:h-[601px] rounded-[14.1px] md:rounded-[27px]">
+              <CldVideoPlayer
+                className="w-full h-full"
+                autoplay={true}
+                loop={true}
+                width="361"
+                height="180.5"
+                src="https://res.cloudinary.com/dcwlomcob/video/upload/v1712181909/aboutUsVideo_ozaxok.mov"
+                colors={{
+                  accent: "#f0f10f0",
+                  base: "#f0f1f0",
+                  text: "#000000",
+                }}
+              />
             </div>
 
             <div className="w-full flex md:hidden gap-[21.47px] justify-between">
@@ -207,21 +215,23 @@ const AboutUs = () => {
             height={154.544}
           />
           <div className="w-full flex justify-between pr-[21.41px]">
-            <div className="hidden md:flex flex-col gap-4">
-              <Image
-                className="object-contain"
-                src="/star.svg"
-                alt="star"
-                width={48}
-                height={49}
-              />
-              <p className="text-[50px] leading-[60px] -tracking-[1.25px] font-normal">
-                About
-                <br /> US
-              </p>
+            <div className="hidden md:flex h-fit relative ">
+              <div className="hidden md:flex flex-col gap-4 sticky top-0">
+                <Image
+                  className="object-contain"
+                  src="/star.svg"
+                  alt="star"
+                  width={48}
+                  height={49}
+                />
+                <p className="text-[50px] leading-[60px] -tracking-[1.25px] font-normal">
+                  About
+                  <br /> US
+                </p>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-[22.79px]">
+            <div className="flex flex-col relative">
               {aboutUs.map((item, index) => (
                 <AboutUsCard key={index} aboutDetails={item} />
               ))}
