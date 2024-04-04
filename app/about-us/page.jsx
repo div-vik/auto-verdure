@@ -231,7 +231,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="flex flex-col relative">
+            <div className="flex flex-col gap-5 relative">
               {aboutUs.map((item, index) => (
                 <AboutUsCard key={index} aboutDetails={item} />
               ))}
